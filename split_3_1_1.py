@@ -292,7 +292,7 @@ def time_split(tp,tp_dict,filename, max_lines=None,top_n=1500, sample_num=700):
         e_final.add(parts[2])
 
     all_rel = set()
-    with open("/data/zhaotianzhe/24projects/LKGE/data/FB15k-237/relations.dict",'r') as f:
+    with open("../data/FB15k-237/relations.dict",'r') as f:
         for line in f:
             all_rel.add(line.strip().split('\t')[1])
     n_rel = all_rel - r_final
