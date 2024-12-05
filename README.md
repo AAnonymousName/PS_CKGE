@@ -11,7 +11,7 @@ PS-CKGE
 ├── PS-CKGE-4_1
 ├── PS-CKGE-3_1_1
 ```
-For FACT and our dataset, we set up three dynamic scenarios with data ratios of 4:2, 4:1 and 3:1:1 respectively.
+For FACT and our dataset, we set up three dynamic scenarios with data ratios of 3:2, 4:1 and 3:1:1 respectively.
 ### Generation process
 
 ```sh
