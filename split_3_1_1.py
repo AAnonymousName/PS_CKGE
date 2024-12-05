@@ -1,4 +1,5 @@
 import random
+import argparse
 def parse_instance_file(filename, max_lines=None):
     tp_ins = set()
     tp_body = set()
@@ -503,8 +504,12 @@ def split_data(s0,s1,s2,data_name):
             f.write(line + '\n')
 
 def main():
-    instance_file = 'FB15k-237_merge_50_2_instance.txt'
-    data_name = 'PS-CKGE-4_1'
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--instance_file', type=str, help="File name of rule instances")
+    parser.add_argument('--data_name', type=str, help="Dataset name")
+    args = parser.parse_args()
+    instance_file = args.instance_file
+    data_name = args.data_name
     tp_dict = parse_instance_file(instance_file, max_lines=66736)
     new_dict = filter_tp_dict(tp_dict, threshold=3)
     tp1 = list(new_dict.keys())
