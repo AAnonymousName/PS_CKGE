@@ -1,7 +1,5 @@
 # Benchmarking Continual Knowledge Graph Embedding with Pattern Shifts
 ### Dataset
-
-
 ```
 FACT
 ├── FACT-3_2
@@ -12,9 +10,8 @@ PS-CKGE
 ├── PS-CKGE-3_2
 ├── PS-CKGE-4_1
 ├── PS-CKGE-3_1_1
-
-
 ```
+For FACT and our dataset, we set up three dynamic scenarios with data ratios of 4:2, 4:1 and 3:1:1 respectively.
 ### Generation process
 
 ```sh
